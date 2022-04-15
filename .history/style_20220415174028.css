@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+}
+.bowl{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(231, 207, 207);
+    border: 8px solid transparent;
+}
+.bowl::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50px;
+    border: 15px solid antiquewhite;
+}
